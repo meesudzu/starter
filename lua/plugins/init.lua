@@ -16,6 +16,13 @@ return {
         lazy = false,
         config = function()
         require("nvim-tree").setup()
+
+        vim.api.nvim_create_autocmd("VimEnter", {
+            callback = function()
+                require("nvim-tree.api").tree.open()
+            end,
+        })
+
         end,
     },
     {
@@ -26,7 +33,6 @@ return {
                 "lua",
                 "vimdoc",
                 "python",
-                "ansible",
                 "terraform",
                 "yaml",
             },
@@ -45,10 +51,28 @@ return {
                 "bash-language-server",
                 "beautysh",
                 "shfmt",
+                "shellcheck",
                 "terraform-ls",
                 "yaml-language-server",
                 "yamlfmt",
                 "yamllint",
+                "autoflake",
+                "autopep8",
+                "basic-language-server",
+                "brunette",
+                "dockerfile-language-server",
+                "dot-language-server",
+                "dotenv-linter",
+                "editorconfig-checker",
+                "fixjson",
+                "gitui",
+                "jinja-lsp",
+                "json-lsp",
+                "kube-linter",
+                "luaformatter",
+                "luacheck",
+                "nginx-language-server",
+                "tflint"
             },
         },
     },

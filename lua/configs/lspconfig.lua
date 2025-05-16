@@ -7,6 +7,12 @@ local servers = {
     "bash-language-server",
     "terraform-ls",
     "yaml-language-server",
+    "basic-language-server",
+    "dockerfile-language-server",
+    "dot-language-server",
+    "jinja-lsp",
+    "json-lsp",
+    "nginx-language-server",
 }
 vim.lsp.enable(servers)
 

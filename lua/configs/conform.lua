@@ -5,6 +5,8 @@ local options = {
             "beautysh",
             "shfmt",
             "yamlfmt",
+            "brunette",
+            "luaformatter"
         },
     },
 

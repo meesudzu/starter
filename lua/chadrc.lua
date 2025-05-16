@@ -6,14 +6,17 @@
 local M = {}
 
 M.base46 = {
-  theme = "everforest",
+    theme = "everforest",
 }
 
 M.nvdash = { load_on_startup = true }
 M.ui = {
-  tabufline = {
-    lazyload = false,
-  },
+    tabufline = {
+        lazyload = false,
+    },
+    cheatsheet = {
+        theme = "simple",
+    },
 }
 
 return M
